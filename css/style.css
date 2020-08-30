@@ -1,0 +1,823 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/Poppins/Poppins-Black.ttf);
+    src: url(fonts/Poppins/Poppins-BlackItalic.ttf);
+    src: url(fonts/Poppins/Poppins-Bold.ttf);
+    src: url(fonts/Poppins/Poppins-BoldItalic.ttf);
+    src: url(fonts/Poppins/Poppins-ExtraBold.ttf);
+    src: url(fonts/Poppins/Poppins-ExtraBoldItalic.ttf);
+    src: url(fonts/Poppins/Poppins-ExtraLight.ttf);
+    src: url(fonts/Poppins/Poppins-ExtraLightItalic.ttf);
+    src: url(fonts/Poppins/Poppins-Italic.ttf);
+    src: url(fonts/Poppins/Poppins-Light.ttf);
+    src: url(fonts/Poppins/Poppins-LightItalic.ttf);
+    src: url(fonts/Poppins/Poppins-Medium.ttf);
+    src: url(fonts/Poppins/Poppins-MediumItalic.ttf);
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+    src: url(fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url(fonts/Poppins/Poppins-SemiBoldItalic.ttf);
+    src: url(fonts/Poppins/Poppins-Thin.ttf);
+    src: url(fonts/Poppins/Poppins-ThinItalic.ttf);
+}
+/*
+  Theme Name: Name - Multipurpose HTML Template
+  Author: AL Amin Akash
+  Support: alaminakash145@gmail.com
+  Description: Creative  HTML5 template.
+  Version: 1.0
+*/
+
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer 
+*/
+
+
+
+/* 1. Theme default css */
+*,html{
+    scroll-behavior: smooth;
+}
+ body {
+	font-family: 'Poppins';
+	font-weight: 1.8;
+	font-style: normal;
+}
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+.button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins';
+	font-weight: 900;
+	color: #313131;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 400;
+	text-transform: normal;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #7e7e7e;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #7e7e7e;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #1696e7 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+/* button style */
+
+.btn {
+	-moz-user-select: none;
+	background: #1696e7 none repeat scroll 0 0;
+	border: medium none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 13px 25px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.3s ease 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+.btn.btn-black {
+	background: #303b41;
+}
+.btn.btn-black:hover {
+	background: #1a1a1a;
+}
+.btn:hover {
+	background: #106fab;
+	color: #fff
+}
+.btn.btn-large {
+	padding: 10px 25px;
+}
+.btn-lg {
+	font-weight: 700;
+	padding: 13px 31px;
+}
+.btn.white-btn:hover {
+	border-color: #ddd;
+	color: #ddd
+}
+.btn.btn-base.btn-link {
+	background: transparent none repeat scroll 0 0;
+	border: 0 none;
+	color: #1696e7;
+	padding: 0;
+	text-decoration: none;
+}
+.btn.btn-base.btn-link:hover {
+	color: #106fab;
+}
+.theme-bg {
+	background: #1696e7
+}
+.bg-white {
+	background-color: #ffffff;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+/*===================================================== Defold Css End =====================================================*/
+/*===================================================== heder_section Start =====================================================*/
+.top_area_titel {
+    background-color: rgb(25, 35, 48);
+    padding: 10px;
+}
+
+.icon_area_link a {
+  font-size: 13px;
+  font-family: monospace;
+  color: rgb(171, 171, 171);
+  margin-left: 16px;
+}
+
+.top_social_media a {
+    font-size: 14px;
+    /* font-family: "FontAwesome"; */
+    color: rgb(125, 125, 125);
+    line-height: 1.2;
+    padding-left: 15px;
+}
+/*===================================================== heder_section  End =====================================================*/
+/*===================================================== Navabr_section  End =====================================================*/
+.Navbar_bg {
+    background: #ffffff;
+    padding: 30px 0;
+    font-family: Poppins;
+    font-weight: bold;
+    z-index: 999;
+}
+.logo a img {
+    max-width: 150px;
+}
+nav ul li {
+	display: inline-block;
+	position: relative;
+}
+nav ul li a {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: #444444;
+    text-transform: uppercase;
+    line-height: 1.077;
+    display: block;
+    padding-left: 20px;
+}
+nav ul li:hover > a {
+	color: rgb(0, 150, 136); 
+}
+/* Dropdown Area Stard */
+nav ul li .submenu{
+	position: absolute;
+    background: black;
+    width: 200px;
+	top: 50px;
+	z-index: 999;
+	/* transform: translate3d(9px, 40px, 10px); */
+	left: 200px;
+	transition: .4s;
+	opacity: 0;
+	visibility: hidden;
+}
+nav ul li:hover .submenu{
+	/* transform: translate3d(9px, 0px, 10px); */
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+ul li .submenu li {
+    display: block;
+    text-align: left;
+}
+ul li .submenu li a {
+    font-size: 20px;
+    padding: 10px 26px;
+    color: #fff;
+    text-transform: capitalize;
+}
+/* Dropdown Area Stard */
+/*===================================================== Navabr_section  End =====================================================*/
+/*===================================================== Hero_section Start  =====================================================*/
+section.hero_section_area {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: #bbbbbb;
+	background-position: top center;
+	position: relative;
+}
+section.hero_section_area::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: #513b68;
+	opacity: .8;
+	clip-path: circle(57% at 20%);
+
+}
+.table {
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+.table_sell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.table_sell h3 {
+    font-size: 54px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.table_sell h3 span {
+    display: block;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.table_sell p {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    line-height: 1.846;
+    letter-spacing: 2px;
+}
+/*===================================================== Hero_section  End =====================================================*/
+/*===================================================== About_section Start =====================================================*/
+.Multiple_style h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+.About_area {
+    padding: 100px 0;
+}
+.My_photos img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+.arrow_bg {
+    background: #302f4e;
+    padding: 50px 45px;
+}
+.arrow_bg p {
+    font-size: 19px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 33px;
+}
+.arrow_bg {
+    position: relative;
+}
+.arrow_bg::before {
+    position: absolute;
+    content: "";
+    left: -3%;
+    top: 26%;
+    width: 50px;
+    height: 50px;
+    background:  #302f4e;;
+    transform: rotate(45deg);
+}
+.About_service {
+    background: cornsilk;
+	padding: 45px 15px;
+	margin-top: 50px;
+}
+.About_service i {
+    text-align: center;
+    display: block;
+    font-size: 72px;
+}
+.About_service span {
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.About_service h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/*===================================================== About_section End =====================================================*/
+/*===================================================== Service_section Start =====================================================*/
+.service_area {
+	padding: 100px 0;
+	background: azure;
+}
+
+.single_services_box img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.single_services_box {
+    text-align: center;
+    background: aqua;
+    padding: 20px 0;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.single_services_box h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.single_services_box p {
+	font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: left;
+    padding-left: 25px;
+}
+p.click-here {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    margin-top: 15px;
+}
+/*===================================================== Service_section End =====================================================*/
+/*===================================================== Experience_area Start =====================================================*/
+.Experience_area {
+    padding: 21px 0;
+}
+.timeline {
+    position: relative;
+}
+.timeline::before {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 98%;
+    background: rebeccapurple;
+	content: "";
+	margin: 20px 0;
+}
+.timeline-caption {
+    border: 2px solid rebeccapurple;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.timeline-caption::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background: black;
+    transform: translate(-50%, -50%);
+}
+.timeline-caption::after{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    content: "";
+    background: red;
+    transform: translate(-50%, -50%);
+}
+/*===================================================== Experience_area End =====================================================*/
+/*===================================================== recent_works area Start =====================================================*/
+.recent_works {
+    padding: 100px 0;
+    background: aliceblue;
+}
+p.button_design {
+    display: inline-block;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 21;
+    color: #fff;
+}
+p.button_design::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #fff;
+    z-index: -5;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 50px;
+    transition: .4s ease-in-out;
+}
+p:hover.button_design::before{
+    filter: drop-shadow(2px 4px 6px blue); 
+}
+.isotop_button {
+    padding: 20px 0;
+}
+.img_item {
+    position: relative;
+    overflow: hidden;
+}
+
+.box_text {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: blue;
+    opacity: .8;
+    height: 100%;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.img_item:hover .box_text{
+    top: 0;
+}
+.box_text h2 {
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    transform: translate(-46%, -50%);
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.img_item {
+    background: black;
+	padding: 76px;
+	margin-bottom: 20px;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.img_item img {
+    max-width: 200px;
+    display: block;
+	margin: 0 auto;
+	margin-left: 15px;
+}
+/*===================================================== recent_works area End =====================================================*/
+/*===================================================== Pricing area Start =====================================================*/
+.pricing_area {
+    padding: 100px 0;
+}
+.single-pricing_table i {
+    font-size: 60px;
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+.single-pricing_table {
+    text-align: center;
+}
+.single-pricing_table h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.single-pricing_table ul li a {
+    font-size: 18px;
+    color: #000;
+    line-height: 37px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.single-pricing_table:hover {
+    clip-path: circle(64% at 50%);
+    filter: drop-shadow(0px 50px 2px #ffffff);
+}
+
+.single-pricing_table {
+    background: #bbb;
+    position: relative;
+    padding: 10px 5px 40px 15px;
+    clip-path: circle(64% at 50%);
+    transition: .4s ease-in-out;
+    clip-path: circle(93% at 66%);
+}
+.single-pricing_table.active {
+    position: relative;
+}
+
+.single-pricing_table.active::before {
+    position: absolute;
+    content: "Recommended";
+    background: black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    left: 27%;
+    top: -19px;
+}
+a.pricing-position {
+    position: relative;
+    font-size: 37px !important;
+}
+a.pricing-position::after {
+    position: absolute;
+    content: "$";
+    right: 43px;
+    top: -8px;
+    font-size: 21px;
+}
+a.pricing-position::before {
+    position: absolute;
+    content: "Monts";
+    left: 44px;
+    top: 10px;
+    font-size: 20px;
+}
+.single-pricing_table a {
+    margin-top: 15px;
+}
+/*===================================================== Pricing area End =====================================================*/
+/*===================================================== Testimonial area Start =====================================================*/
+.testimonial_active.owl-carousel .owl-item img {
+    display: block;
+    width: 14%;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.testimonial_items h3 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.testimonial_items span {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+.testimonial_items p {
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.owl-carousel button.owl-dot{
+    width: 15px;
+    height: 7px;
+    background: black;
+    display: inline-block;
+    margin-left: 10px;
+}
+.owl-carousel button.owl-dot.active {
+    background: red;
+    width: 27px;
+    height: 9px;
+    border-radius: 50px;
+}
+button:focus{
+    outline: none;
+}
+.testimonial_area {
+    padding: 100px 0;
+    background: aliceblue;
+}
+.testimonial_items {
+    padding: 0 0 25px 0;
+}
+/*===================================================== Testimonial area End =====================================================*/
+/*===================================================== Latest posts area Start =====================================================*/
+.latest_post_area {
+    padding: 100px 0;
+}
+.single-latest_post {
+    box-shadow: 7px 8px 28px #bbb;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.single-latest_post img {
+    width: 100%;
+}
+/* .post-Images {
+    background: #fff;
+    padding: 76px 0;
+    display: block;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    filter: hue-rotate(26deg);
+} */
+
+.single_titel {
+    padding: 45px 10px 20px 15px;
+    background: #ffffff;
+}
+
+.single_titel h4 {
+    color: black;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.single_titel p {
+    color: black;
+    font-size: 16px;
+}
+/*===================================================== Latest posts area End =====================================================*/
+/*===================================================== Contact area Start Start =====================================================*/
+.contacr-area {
+    padding: 100px 0;
+    background: aliceblue;
+}
+.contacr-area h4 {
+    text-transform: capitalize;
+    font-size: 27px;
+}
+.contacr-area h5 span a {
+    color: red;
+    text-transform: capitalize;
+}
+form input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+}
+input[type="submit"] {
+    width: 25%;
+    background: red;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 14px;
+}
+/*===================================================== Contact area Start End =====================================================*/
+/*===================================================== footer area Start Start =====================================================*/
+.footer_area {
+    background: #353353;
+    padding-top: 14px;
+}
+.footer_area p {
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+/*===================================================== footer area Start End =====================================================*/
